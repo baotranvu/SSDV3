@@ -1,78 +1,54 @@
-# 🗺️ Hệ Thống Tài Liệu Dự Án VietnamTravel3D (Project Documentation Index)
+# 📚 Core SDD v3.0 Documentation Repository
 
-Chào mừng bạn đến với trung tâm tài liệu của dự án **VietnamTravel3D**. Hệ thống tài liệu này được tổ chức thống nhất theo quy trình **Spec-Driven Development (SDD) v3.0** toàn cục.
-
----
-
-## 🧭 1. Quy Trình Vận Hành & Hướng Dẫn AI Agent
-
-Tất cả lập trình viên (con người) và AI Coding Agents bắt buộc phải tuân thủ nghiêm ngặt các quy trình và tiêu chuẩn sau trước khi chỉnh sửa mã nguồn:
-
-- **Quy trình SDD v3.0**: [global-sdd-workflow.md](workflows/global-sdd-workflow.md) — Hướng dẫn 10 bước phát triển tính năng từ Idea đến Deploy.
-- **Hướng dẫn cho IDE & AI Tools**: [ide-integration-guide.md](workflows/ide-integration-guide.md) — Hướng dẫn cấu hình `.cursorrules` cho Cursor và `.clinerules` cho Cline.
-- **AI Agent Guidelines**:
-  - Hướng dẫn Backend Developer Agent: [ai-agent-workflow.md](workflows/ai-agent-workflow.md)
-  - Hướng dẫn Frontend Developer Agent: [fe-agent-workflow.md](workflows/fe-agent-workflow.md)
-- **Quy trình Triển khai (DevOps)**:
-  - Tài liệu triển khai: [deploy-workflow.md](workflows/deploy-workflow.md)
-  - Checklist trước và sau deploy: [deployment-checklist.md](workflows/deployment-checklist.md)
+This repository contains **only** the essential documentation for the **Spec‑Driven Development (SDD) v3.0** process. It does **not** include any application source code or design artefacts that belong to the original VietnamTravel3D project.
 
 ---
 
-## 🛠️ 2. Tiêu Chuẩn & Quy Chuẩn (Standards - SSOT)
-
-Các quy chuẩn và Single Source of Truth (SSOT) dùng chung cho toàn bộ dự án:
-
-- **Backend C# Coding Standards**: [backend-coding-standards.md](standards/backend-coding-standards.md)
-- **Frontend Vue3/Nuxt3 Coding Standards**: [frontend-coding-standards.md](standards/frontend-coding-standards.md)
-- **Giao ước API (API Contract)**: [api-contract.md](standards/api-contract.md)
-- **Danh mục mã lỗi (Error Catalog)**: [error-catalog.md](standards/error-catalog.md)
-- **Tiêu chuẩn nén và lưu trữ 3D Assets**: [asset-pipeline.md](standards/asset-pipeline.md)
-- **Theo dõi nợ kỹ thuật (Technical Debt)**: [technical-debt.md](standards/technical-debt.md)
-- **Kho tri thức tham khảo (Knowledge Base)**: [knowledge-base.md](standards/knowledge-base.md)
+## 🧭 1. Process & Guidelines
+- **Global SDD Workflow**: `workflows/global-sdd-workflow.md` – the 10‑step process from Idea → Deploy.
+- **IDE & AI Tools Integration**: `workflows/ide-integration-guide.md` – how to configure IDEs and AI agents to follow the workflow.
+- **AI Agent Guides**:
+  - Backend Agent: `workflows/ai-agent-workflow.md`
+  - Frontend Agent: `workflows/fe-agent-workflow.md`
+- **Deployment Workflow & Checklist**: `workflows/deploy-workflow.md` & `workflows/deployment-checklist.md`
 
 ---
 
-## 🏛️ 3. Thiết Kế Kiến Trúc Hệ Thống (Architecture)
-
-Tài liệu thiết kế kiến trúc lõi của dự án:
-
-- **Tổng quan Kiến trúc Hệ thống**: [overview.md](architecture/overview.md)
-- **Thiết kế Domain-Driven Design (Domain Model)**: [domain-model.md](architecture/domain-model.md)
-- **Thiết kế Cơ sở Dữ liệu (Database Schema)**: [database-schema.md](architecture/database-schema.md)
-- **Cẩm nang sản xuất 3D Asset**: [glb-generation-pipeline.md](architecture-guides/glb-generation-pipeline.md)
-
----
-
-## 📋 4. Quản Lý Tiến Độ & Specs
-
-Theo dõi tiến độ hàng ngày và đặc tả chi tiết của từng tính năng:
-
-- **Lộ Trình Phát Triển (Roadmap)**: [ROADMAP.md](ROADMAP.md) — Tổng quan lộ trình các Sprints.
-- **Bảng Theo Dõi Tiến Độ & Backlog**: [tasks/README.md](tasks/README.md) — Danh sách nhiệm vụ cụ thể.
-- **Đặc Tả Tính Năng (Feature Specs - FS)**:
-  - [FS-007: Nâng cấp Hologram & Glassmorphism UI](specs/features/UI/FS-007-ui-upgrade.md)
-  - [FS-001: Tìm kiếm Ghim theo Zoom Level](specs/features/Pins/FS-001-get-pins-by-zoom.md)
-- **Đặc Tả Kỹ Thuật Chi Tiết (Technical Specs - TS)**:
-  - [TS-001: Hệ thống Ghim đa cấp độ](specs/technical/TS-001-pin-system.md)
-  - [TS-003: Nâng cấp visual bản đồ và VR Tour](specs/technical/TS-003-map-visual-upgrade-sprint7-8.md)
-  - [TS-004: Hệ thống tự động sinh bản đồ 3D](specs/technical/TS-004-decoupled-map-generation.md)
-- **Quyết định thiết kế kiến trúc (ADRs)**:
-  - [ADR-002: Sử dụng Complex Type cho tọa độ camera](specs/technical/adr/ADR-002-camera-coords.md)
-  - [ADR-003: Sử dụng Enum an toàn kiểu dữ liệu cho mã vùng miền](specs/technical/adr/ADR-003-region-enum.md)
-- **Kế hoạch kiểm thử (Test Plans - TP)**:
-  - [TP-001: Kiểm thử API Ghim theo Zoom Level](test-plans/TP-001-get-pins-by-zoom.md)
-- **Báo cáo hoàn thành (Completion Reports - CR)**:
-  - [CR-005: Báo cáo hoàn thành Sprint 5](reports/CR-005-sprint5-completion.md)
+## 🛠️ 2. Specs & Templates
+- **Feature Spec Templates**: `specs/features/…` (e.g., `FS-001-get-pins-by-zoom.md`).
+- **Brainstorm Records**: `specs/brainstorm/…`.
+- **Technical Spec Templates**: `specs/technical/…`.
+- **Architecture Decision Records (ADRs)**: `specs/technical/adr/…`.
+- **Task Templates**: `tasks/_template/task.template.md` and per‑task docs under `tasks/`.
+- **Test Plan Templates**: `test-plans/TP-001-get-pins-by-zoom.md` and other `test-plans/` files.
+- **Completion Reports**: `reports/CR-005-sprint5-completion.md` (example).
 
 ---
 
-## 🗄️ 5. Thư Viện Lưu Trữ (Archive)
+## 📏 3. Standards
+- **Backend Coding Standards**: `standards/backend-coding-standards.md`
+- **Frontend Coding Standards**: `standards/frontend-coding-standards.md`
+- **API Contract**: `standards/api-contract.md`
+- **Error Catalog**: `standards/error-catalog.md`
+- **Asset Pipeline**: `standards/asset-pipeline.md`
+- **Technical Debt**: `standards/technical-debt.md`
+- **Knowledge Base**: `standards/knowledge-base.md`
 
-Nơi lưu trữ các tài liệu lịch sử hoặc đặc tả thiết kế cũ đã hoàn thành bàn giao:
+---
 
-- **Thiết kế & Brainstorm lịch sử**: [design-archive/historical-brainstorms/](design-archive/historical-brainstorms/) — 15 tệp thảo luận giai đoạn đầu.
-- **Tài liệu bàn giao cũ**: [archive/handovers/](archive/handovers/)
-- **Hướng dẫn walkthrough cũ**: [archive/walkthroughs/](archive/walkthroughs/)
-- **Thiết kế cũ & Spec cũ**: [archive/design/](archive/design/)
-- **Tasks & Báo cáo cũ**: [archive/tasks-archive/](archive/tasks-archive/)
+## 📅 4. Roadmap & Tracking
+- **Project Roadmap**: `ROADMAP.md`
+- **Task List & Backlog**: `tasks/README.md`
+
+---
+
+## 📂 5. What Is NOT Included
+This repo purposely excludes the following heavy assets that are unrelated to the SDD process:
+- `design-archive/` and all historic mockups.
+- `archive/` (old hand‑over documents).
+- `architecture/` and `architecture-guides/` (implementation‑specific diagrams).
+- Any source code (`src/`, `vietnam-travel-3d-fe/`, etc.).
+
+---
+
+Feel free to clone this repository as a **process‑only** reference for any new project that wants to adopt the SDD v3.0 methodology.
